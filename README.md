@@ -1,64 +1,32 @@
-# PortfolioV2
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![PortfolioV2](/images/portfolio1.gif)
+## Getting Started
 
-### A clean portfolio template. (Readme will be updated soon)
+First, run the development server:
 
-# Sections
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-- Home
-- Education and Certificates
-- Experience
-- Projects
-- Contact and Resume
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# How To Use
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-- Clone this repository (or fork, then clone your fork :) )
-- Run `npm i`
-- Check it out using `npm start`
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-# How Do I Customize
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- Replace `homepage` in package.json to your domain name or `https://<username>.github.io`
-- In `src/portfolio.js` you can add your personal portfolio details.
-- In `src/theme.js` you can change the theme colors. You can change between Light and Dark theme with the theme switch on the header.
+## Learn More
 
-# How to Deploy
+To learn more about Next.js, take a look at the following resources:
 
-- Once you are done with your setup and have successfully completed all steps above, you need to put your website online!
-- I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this the EASIEST WAY.
-- To deploy your website, you have two options. First you need to create a github repository with the name `<your-github-username>.github.io`. Please don't give it any other name.
-- Now, you need to generate a production build and deploy the website.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-**Option 1:**
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- Run `npm run build` to generate the production build folder.
-- Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository. That's it. Done.
-  You may need to `git init` and force push at every new build.
+## Deploy on Vercel
 
-**Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
-
-- Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
-- The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
-
-Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.  
-
-
-# Technologies used 🛠️
-
-- [React](https://reactjs.org/)
-- [graphql](https://graphql.org/)
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
-- [baseui](https://github.com/uber/baseweb)
-- [react-reveal](https://www.react-reveal.com/)
-- [styled-components](https://styled-components.com/)
-
-# illustrations 🍥
-
-- [UnDraw](https://undraw.co/illustrations)
-
-# References
-
-Based on https://github.com/ashutosh1919/masterPortfolio/ and https://github.com/saadpasta/developerFolio
-Illustrations: https://undraw.co/
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fimadatyatalah%2Fnextjs-chakra-ui-portfolio-template&project-name=nextjs-chakra-ui-portfolio-template&repo-name=nextjs-chakra-ui-portfolio-template&demo-description=A+Next.js+template+for+building+your+portfolio+as+quick+as+possible+with+a+nice+design.&demo-url=https%3A%2F%2Fportfolio-boilerplate-nextjs.vercel.app%2F)
