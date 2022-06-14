@@ -9,6 +9,7 @@ import { NextSeo } from "next-seo";
 import NextImage from "next/image";
 
 import { seo, data } from "config";
+import SocialAccounts from "@/components/socialAccounts";
 
 const Home = () => {
   const color = useColorModeValue("telegram.500", "telegram.400");
@@ -29,15 +30,14 @@ const Home = () => {
           description,
           images: [
             {
-              url: `${seo.canonical}bighead.svg`,
-              width: "350px",
-              height: "350px",
+              url: `${seo.canonical}avatar.png`,
+              width: "300px",
+              height: "300px",
               alt: "avatar bigheads",
             },
           ],
         }}
       />
-
       <Box
         as="section"
         d="flex"
@@ -47,9 +47,9 @@ const Home = () => {
         py="4"
       >
         <NextImage
-          src="/bighead.svg"
-          width="350"
-          height="350"
+          src="/avatar.png"
+          width="200"
+          height="200"
           alt="avatar bigheads"
           placeholder="blur"
           blurDataURL="L5I~of#i004mgjw]-4XA00?wL#xu"
@@ -57,11 +57,12 @@ const Home = () => {
         />
         <Box>
           <Heading as="h1" fontSize="2xl" fontWeight="500" py="2">
-            Hi, I'm John Doe{" "}
+            Hi, I'm Yannick{" "}
             <span role="img" aria-label="hand">
               👋🏻
             </span>
           </Heading>
+          <SocialAccounts />
           <Heading fontSize={["3xl", "4xl"]} fontWeight="700">
             <Text as="span" color={color}>
               Building
