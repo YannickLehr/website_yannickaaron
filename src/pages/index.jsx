@@ -65,9 +65,9 @@ const Home = () => {
           <SocialAccounts />
           <Heading fontSize={["3xl", "4xl"]} fontWeight="700">
             <Text as="span" color={color}>
-              Building
+            Data Science-,
             </Text>{" "}
-            digital products, Brands, And experience.
+            Automation-, Consultant & more.
           </Heading>
           <Text py="4">
             A{" "}
