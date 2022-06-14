@@ -3,8 +3,8 @@ import { FaGithub, FaLinkedin, FaInstagram, FaCode } from "react-icons/fa";
 
 // Fell free to add your social media accounts!
 const accounts = [
-  { icon: FaGithub, path: "https://github.com/", title: "Github" },
-  { icon: FaLinkedin, path: "https://www.linkedin.com/", title: "Linkedin" },
+  { icon: FaGithub, path: "https://github.com/YannickAaron", title: "Github" },
+  { icon: FaLinkedin, path: "https://www.linkedin.com/in/yannicklehr/", title: "Linkedin" },
   { icon: FaInstagram, path: "https://www.instagram.com/", title: "Instagram" },
 ];
 
