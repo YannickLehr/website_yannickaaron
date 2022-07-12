@@ -1,6 +1,8 @@
 TODO:
 inlcude: https://nnplayground.com
 
+The personal information on the website is populated from a json file that follows the JSON Resume (https://jsonresume.org/) open source standard.
+
 
 <div align="center">
   <h1><a href="https://mahmad.me" target="_blank">Mahmad.me</a></h1>

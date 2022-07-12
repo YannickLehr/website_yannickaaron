@@ -167,7 +167,7 @@ const Home: React.FC<BlogPostProps> = (props) => {
       >
         <Box mt={10}>
           <ContentBox linkColor={linkColor} />
-          <PopularArticles posts={posts} />
+          {/*<PopularArticles posts={posts} />*/}
         </Box>
       </MotionBox>
     </Flex>

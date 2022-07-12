@@ -33,24 +33,24 @@ import { useLinkColor } from 'components/theme';
 import { MotionBox } from 'components/shared/animations/motion';
 
 const webLinks = [
-  { name: 'About', path: '/about' },
-  { name: 'Blog', path: '/blog' }
+  { name: 'Resume', path: '/resume' }
+  //{ name: 'Blog', path: '/blog' }
 ];
 
 const mobileLinks = [
-  { name: 'Projects', path: '/projects' },
-  { name: 'Open Source', path: '/open-source' },
+  { name: 'Resume', path: '/resume' },
+  /*{ name: 'Open Source', path: '/open-source' },
   { name: 'Blog', path: '/blog' },
-  { name: 'Changelog', path: '/changelog' }
+  { name: 'Changelog', path: '/changelog' } */
 ];
 
 const dropdownLinks = [
-  { name: 'Projects', path: '/projects' },
+  /*{ name: 'Projects', path: '/projects' },
   { name: 'Tech Stack', path: '/tech-stack' },
   { name: 'Open Source', path: '/open-source' },
   { name: 'Achievements', path: '/achievements' },
   { name: 'Changelog', path: '/changelog' }
-  // { name: "Developer Story", path: "/developer-story" }
+  // { name: "Developer Story", path: "/developer-story" } */
 ];
 
 interface NavLinkProps {
@@ -191,7 +191,7 @@ export default function TopNav() {
               <Menu autoSelect={false} isLazy>
                 {({ isOpen, onClose }) => (
                   <>
-                    <MenuButton
+                    {/*<MenuButton
                       as={Button}
                       variant="ghost"
                       size="sm"
@@ -214,7 +214,7 @@ export default function TopNav() {
                         transition={'all .25s ease-in-out'}
                         transform={isOpen ? 'rotate(180deg)' : ''}
                       />
-                    </MenuButton>
+                </MenuButton>*/}
                     <MenuList
                       zIndex={5}
                       bg={useColorModeValue('rgb(255, 255, 255)', 'rgb(26, 32, 44)')}
