@@ -1,10 +1,9 @@
 import Home from 'components/home-page/home'
-import SplitScreen from 'components/home-page/SplitScreen'
 import PageLayout from 'components/layouts/pageLayout'
 import { Box, Container, SimpleGrid } from '@chakra-ui/react'
 import { Heading, Stack, Text, useBreakpointValue, useColorModeValue } from '@chakra-ui/react'
 
-const Stat = (props: Props) => {
+const Stat = (props) => {
   const { label, value, ...boxProps } = props
   return (
     <Box
