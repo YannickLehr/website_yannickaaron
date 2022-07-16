@@ -9,7 +9,7 @@ function AppLayout(props) {
     <Fragment>
       <TopNav />
       <DottedSvgs />
-      <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={800} mx="auto">
+      <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={850} mx="auto">
         <Box pt={'7rem'} pb={10}>
           {props.children}
         </Box>

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
   Flex,
-  Avatar,
   Box,
   Text,
   Badge,
@@ -10,23 +9,19 @@ import {
   UnorderedList,
   ListItem,
   useColorModeValue,
-  Heading,
+  Image,
 } from '@chakra-ui/react'
 import { MotionBox, MotionFlex } from 'components/shared/animations/motion'
 import Header from 'components/shared/header'
 import NextLink from 'next/link'
-import NextImage from "next/image";
 import { useLinkColor } from 'components/theme'
-import PopularArticles from './PopularArticles'
-import { BlogPostProps } from 'interfaces/interface'
 import { newContent } from 'data/data'
 
 const ANIMATION_DURATION = 0.5
 const ORANGE = '#ff9400'
-const emojis = ['👋', '👍', '🖐']
+const emojis = ['👋🏻', '👍', '🖐']
 
-const Home: React.FC<BlogPostProps> = (props) => {
-  const { posts } = props
+const Home = (props) => {
   const linkColor = useLinkColor()
   const [showEmogi, setShowEmoji] = useState(false)
   const [emojiCounter, setEmojiCounter] = useState(-1)
@@ -58,12 +53,9 @@ const Home: React.FC<BlogPostProps> = (props) => {
           mb={[16, 16, 'auto']}
         >
           <MotionBox whileHover={{ scale: 1.2 }} rounded="full">
-          <NextImage
+                      <Image
                 src="/assets/images/user_icon.png"
-                width="500"
-                height="500"
                 alt="avatar bigheads"
-                priority
               />
           </MotionBox>
         </MotionBox>
@@ -121,6 +113,7 @@ const Home: React.FC<BlogPostProps> = (props) => {
             <MotionBox whileHover={{ translateY: -5 }} width="max-content">
               <Header
                 underlineColor={ORANGE}
+                emoji="👋🏻"
                 mt={0}
                 cursor="pointer"
                 width="max-content"
@@ -129,19 +122,16 @@ const Home: React.FC<BlogPostProps> = (props) => {
                   setShowEmoji(true)
                 }}
               >
-                 Hi, I'm Yannick{" "}
-                 <span role="img" aria-label="hand">
-              👋🏻
-            </span>
-                 <Box as="h2" fontSize="2xl" fontWeight="600" textAlign="left">
+                Hi, I'am Yannick!
+              </Header>
+            </MotionBox>
+          </Box>
+          <Box as="h2" fontSize="2xl" fontWeight="600" textAlign="left">
             <Text as="span" color={linkColor}>
             Data Science-,
             </Text>{" "}
             Automation-, Consultant & more.
             </Box>
-              </Header>
-            </MotionBox>
-          </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             This is my digital garden, where I write about the things I&apos;m
             working on and share what I&apos;ve learned. 😊
@@ -167,7 +157,6 @@ const Home: React.FC<BlogPostProps> = (props) => {
       >
         <Box mt={10}>
           <ContentBox linkColor={linkColor} />
-          {/*<PopularArticles posts={posts} />*/}
         </Box>
       </MotionBox>
     </Flex>
