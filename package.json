@@ -7,7 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --cache"
+    "deploy": "yarn build && yarn postbuild && vercel --prod",
+    "deploy:stage": "yarn build && yarn postbuild && vercel",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.10",
