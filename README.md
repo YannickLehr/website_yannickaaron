@@ -1,60 +1,34 @@
-TODO:
-inlcude: https://nnplayground.com
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-The personal information on the website is populated from a json file that follows the JSON Resume (https://jsonresume.org/) open source standard.
+## Getting Started
 
+First, run the development server:
 
-<div align="center">
-  <h1><a href="https://mahmad.me" target="_blank">Mahmad.me</a></h1>
-  My personal portfolio website to show my skills, experience, and articles I published
-</div>
-
-## Built with
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Chakra UI](https://chakra-ui.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Highlight Blog Content**: [prismjs](https://prismjs.com/)
-- **Markdown Processor**: [remark](https://remark.js.org/)
-- **ORM**: [prisma](https://www.prisma.io/)
-- **Deployment**: [Vercel](https://vercel.com)
-- **Api's**:
-  - [Dev.to](https://dev.to/api)
-  - [Github](https://api.github.com)
-
-## Overview
-
-- `components/*` - Contains all components related to pages (blog, projects, about, etc).
-  - `shared/*` - All reusable components like header, footer etc.
-  - `layouts/*` - The different page layouts.
-  -  `theme/*` - Manage theme of site. 
-- `data/*` - Data that used for blog posts, projects etc.
-- `lib/*` - Collection of helpful utilities or code for external services like devto api.
-- `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction).
-- `pages/blog/*` - Static pre-rendered blog pages using MDX.
-- `pages/*` - All other static pages.
-- `prisma/*` - My Prisma schema, which uses a Postgresql database.
-- `public/*` - Static assets including audios, fonts and images.
-
-## View and copy code of your favourite components
-[TemplatesKart website](https://templateskart.com/projects/my-website)
-
-## Running Locally
-
-```sh
-git clone https://github.com/MA-Ahmad/myPortfolio
-cd myPortfolio && yarn install
+```bash
+npm run dev
+# or
 yarn dev
 ```
 
-The above commands will start the application on [http://localhost:3000/](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-<!-- ## Screens
-### Home 
-![Home Screen](/public/assets/images/screens/home_page.png)
-### Blog
-![Skills Screen](/public/assets/images/screens/blog_page.png) -->
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-## Cloning / Forking
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Please review the [LICENSE](LICENSE) and remove all of my personal information (projects, blog posts, images, etc)
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

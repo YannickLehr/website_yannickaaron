@@ -1,0 +1,79 @@
+{
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mjml]": {
+    "editor.defaultFormatter": "attilabuti.vscode-mjml"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "cSpell.language": "en,de",
+  "cSpell.words": [
+    "bgcolor",
+    "dayjs",
+    "iban",
+    "Iban",
+    "nextjs",
+    "pino",
+    "Pressable",
+    "prisma",
+    "quotado",
+    "trpc",
+    "TRPC",
+    "upsert",
+    "VERCEL",
+    "workever"
+  ],
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": ["apps/nextjs", "apps/expo"],
+  "files.eol": "\n",
+  "i18n-ally.enabledFrameworks": ["next-translate"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": ["apps/nextjs/locales"],
+  "i18n-ally.namespace": true,
+  "i18n-ally.pathMatcher": "",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.sourceLanguage": "de",
+  "sqltools.connections": [
+    {
+      "database": "quotado",
+      "driver": "PostgreSQL",
+      "name": "supa_local",
+      "password": "postgres",
+      "port": 5432,
+      "previewLimit": 50,
+      "server": "localhost",
+      "username": "postgres"
+    }
+  ]
+}
