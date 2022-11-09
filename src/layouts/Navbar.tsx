@@ -16,7 +16,7 @@ const MainNavbar: React.FC = () => {
     }
   ];
   return (
-    <Navbar isBordered variant="sticky">
+    <Navbar variant="sticky">
       <Navbar.Toggle showIn="xs" />
       <Navbar.Brand
         css={{

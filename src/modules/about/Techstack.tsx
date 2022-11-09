@@ -6,63 +6,15 @@ export default function Techstack() {
   const techstackList = [
     {
       title: 'React',
-      img: '/techstack/react.png'
-    },
-    {
-      title: 'Next JS',
-      img: '/techstack/nextjs.png'
-    },
-    {
-      title: 'Vue JS',
-      img: '/techstack/vuejs.png'
-    },
-    {
-      title: 'Nuxt JS',
-      img: '/techstack/nuxtjs.png'
-    },
-    {
-      title: 'Tailwind',
-      img: '/techstack/tailwind.png'
-    },
-    {
-      title: 'Bootstrap',
-      img: '/techstack/bootstrap.png'
-    },
-    {
-      title: 'Laravel',
-      img: '/techstack/laravel.png'
-    },
-    {
-      title: 'Tensorflow',
-      img: '/techstack/tensorflow.png'
+      img: 'https://reactjs.org/logo-og.png'
     },
     {
       title: 'Pytorch',
-      img: '/techstack/pytorch.png'
+      img: 'https://pytorch.org/assets/images/pytorch-logo.png'
     },
     {
       title: 'PostgreSQL',
-      img: '/techstack/postgresql.png'
-    },
-    {
-      title: 'MySQL',
-      img: '/techstack/mysql.png'
-    },
-    {
-      title: 'Figma',
-      img: '/techstack/figma.png'
-    },
-    {
-      title: 'Google Data Studio',
-      img: '/techstack/datastudio.png'
-    },
-    {
-      title: 'Power BI',
-      img: '/techstack/powerbi.png'
-    },
-    {
-      title: 'Tableau',
-      img: '/techstack/tableau.png'
+      img: 'https://www.postgresql.org/media/img/about/press/elephant.png'
     }
   ];
   return (
