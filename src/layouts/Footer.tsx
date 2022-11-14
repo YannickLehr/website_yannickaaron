@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Text, CSS } from '@nextui-org/react';
+import { Container, Row, Text, CSS, Col } from '@nextui-org/react';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -19,10 +19,26 @@ const Footer: React.FC<Props> = ({ css, containerCss }) => {
         '@xsMax': {
           padding: '$sm $xs'
         },
+        borderTop: '1px solid $footerDivider',
+        marginTop: '10px',
+        shadow: '$sm',
+        shadowColor: '$footerDivider',
         ...containerCss
       }}
       gap={2}
     >
+      <Row align="center" justify="center">
+        <div style={{ margin: 5 }}>
+          <Link href="#">
+            <FaGithub size={25} />
+          </Link>
+        </div>
+        <div style={{ margin: 5 }}>
+          <Link href="#">
+            <FaLinkedin size={25} />
+          </Link>
+        </div>
+      </Row>
       <Row css={css} justify="center">
         <Text
           span
@@ -37,14 +53,6 @@ const Footer: React.FC<Props> = ({ css, containerCss }) => {
             Yannick Aron Lehr
           </Link>
         </Text>
-      </Row>
-      <Row align="center" justify="center">
-        <Link href="#" rel="noreferrer" target="_blank">
-          <FaGithub />
-        </Link>
-        <Link href="#" rel="noreferrer" target="_blank">
-          <FaLinkedin />
-        </Link>
       </Row>
     </Container>
   );

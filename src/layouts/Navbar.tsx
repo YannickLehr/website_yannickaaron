@@ -5,7 +5,7 @@ import Link from 'next/link';
 import DarkModeSwitch from 'components/DarkModeSwitch';
 
 const MainNavbar: React.FC = () => {
-  const collapseItems = [
+  const menuItems = [
     {
       title: 'Home',
       href: '/'
@@ -31,12 +31,9 @@ const MainNavbar: React.FC = () => {
         </Text>
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-        <Navbar.Link href="#">Features</Navbar.Link>
-        <Navbar.Link isActive href="#">
-          Customers
-        </Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Company</Navbar.Link>
+        {menuItems.map((item, index) => (
+          <Navbar.Link href={item.link}>{item.title}</Navbar.Link>
+        ))}
       </Navbar.Content>
       <Navbar.Content
         css={{
@@ -46,48 +43,17 @@ const MainNavbar: React.FC = () => {
           }
         }}
       >
-        <Dropdown placement="bottom-right">
-          <Navbar.Item>
-            <DarkModeSwitch />
-          </Navbar.Item>
-          <Dropdown.Menu
-            aria-label="User menu actions"
-            color="secondary"
-            onAction={(actionKey) => console.log({ actionKey })}
-          >
-            <Dropdown.Item key="profile" css={{ height: '$18' }}>
-              <Text b color="inherit" css={{ d: 'flex' }}>
-                Signed in as
-              </Text>
-              <Text b color="inherit" css={{ d: 'flex' }}>
-                zoey@example.com
-              </Text>
-            </Dropdown.Item>
-            <Dropdown.Item key="settings" withDivider>
-              My Settings
-            </Dropdown.Item>
-            <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
-            <Dropdown.Item key="analytics" withDivider>
-              Analytics
-            </Dropdown.Item>
-            <Dropdown.Item key="system">System</Dropdown.Item>
-            <Dropdown.Item key="configurations">Configurations</Dropdown.Item>
-            <Dropdown.Item key="help_and_feedback" withDivider>
-              Help & Feedback
-            </Dropdown.Item>
-            <Dropdown.Item key="logout" withDivider color="error">
-              Log Out
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <Navbar.Item>
+          <DarkModeSwitch />
+        </Navbar.Item>
       </Navbar.Content>
       <Navbar.Collapse>
-        {collapseItems.map((item, index) => (
+        {menuItems.map((item, index) => (
           <Navbar.CollapseItem
             key={item.title}
             activeColor="secondary"
             css={{
-              color: index === collapseItems.length - 1 ? '$error' : ''
+              color: index === menuItems.length - 1 ? '$error' : ''
             }}
             isActive={index === 2}
           >

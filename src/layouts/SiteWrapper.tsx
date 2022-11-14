@@ -7,11 +7,11 @@ type Props = React.ComponentProps<typeof Container>;
 const SiteWrapper: React.FC<Props> = ({ children, ...rest }) => {
   return (
     <>
+      <Navbar />
       <Container lg {...rest}>
-        <Navbar />
         <div>{children}</div>
-        <Footer />
       </Container>
+      <Footer />
     </>
   );
 };
