@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yannickaaron.io
+
+# Sitemaps
+Sitemap: https://yannickaaron.io/sitemap.xml

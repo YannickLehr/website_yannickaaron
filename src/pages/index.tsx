@@ -1,7 +1,6 @@
-import { Button, Card, Text, Grid, Row, Container, Col } from '@nextui-org/react';
+import { Card, Text, Grid, Row, Container, Col } from '@nextui-org/react';
 
 import SiteWrapper from 'layouts/SiteWrapper';
-import Techstack from 'modules/about/Techstack';
 import { NextPage } from 'next';
 
 import Hero from 'components/Hero';
@@ -40,7 +39,11 @@ const Home: NextPage = ({}) => {
   );
 };
 
-const MockItem = ({ text }) => {
+type MockItemProps = {
+  text: string;
+};
+
+export const MockItem = ({ text }: MockItemProps) => {
   return (
     <Card css={{ h: '$24', $$cardColor: '$colors$primary' }}>
       <Card.Body>
